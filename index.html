@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 21</title>
-</head>
-<body>
-    <h1>calculator</h1>
-    
-</body>
+<html>
+    <head><title>calculator</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+                background-color: aqua;
+            }
+            .heading{
+                text-align: center;
+                color: blue;
+                font-size: 50px;
+
+            }
+            .calculator-body{
+                height: 400px;
+                width: 350px;
+                background-color: black;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 15px;
+                border: double 3px white;
+                padding: 10px;
+                box-shadow: 2px 4px 6px 8px white;
+            }
+            .calculator-screen{
+                background-color: green;
+               display: block;
+                margin-left: auto;
+                margin-right:auto;
+                width:300px;
+                height:50px;
+                font-size: 50px;
+                border-radius: 5px;
+                
+            }
+            .brand-name{
+                color: white;
+                text-align: right;
+                margin-right: 40px;
+            }
+            .btn{
+                font-size: 45px;
+                height: 60px;
+                width: 60px;
+                margin: 5px;
+                margin-left: 5px;
+                border: double 2px;
+                border-radius: 5px;
+              
+                
+            }
+            .btn:hover{
+                border-radius: 15px;
+                box-shadow:0 0 10px white;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+            .btn-cantainer{
+                
+                
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+        
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+
+            }
+            .special-btn{
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="heading">calculator</h1>
+        <div class="calculator-body">
+          <b>  <p class="brand-name">CASIO</p></b>
+            <input type="text" class="calculator-screen"/>
+            <div class="btn-cantainer">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn special-btn">+</button>
+
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn special-btn">-</button>
+
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn special-btn">x</button>
+
+            <button class="btn special-btn">.</button>
+            <button class="btn">0</button>
+            <button class="btn special-btn">=</button>
+            <button class="btn special-btn">/</button>
+
+            
+            </div>
+
+        </div>
+    </body>
 </html>
